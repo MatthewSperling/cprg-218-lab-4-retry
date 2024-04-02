@@ -1,5 +1,5 @@
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(".assets/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bg.jpg");
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,3 +11,33 @@
 .hero-text {
     text-align: center;
 }
+.content-section {
+    display: flex;
+    align-items: center; /* This vertically centers the items in the container */
+    gap: 20px; /* Adds space between the image and text content */
+  }
+  
+  .image-container img {
+    width: 100%; /* Adjust this value based on your design */
+    max-width: 400px; /* Adjust the max-width as needed */
+  }
+  
+  .text-content h1,
+  .text-content p {
+    margin: 0; /* Removes default margin */
+  }
+  
+  .learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073a9; /* Flickr's brand color for demonstration */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Adds a little space above the button */
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #005f86; /* Darker shade for hover effect */
+  }
+  
