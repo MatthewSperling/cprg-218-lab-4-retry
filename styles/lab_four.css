@@ -13,18 +13,18 @@
 }
 .content-section {
     display: flex;
-    align-items: center; /* This vertically centers the items in the container */
-    gap: 20px; /* Adds space between the image and text content */
+    align-items: center; 
+    gap: 20px; 
   }
   
   .image-container img {
-    width: 100%; /* Adjust this value based on your design */
-    max-width: 400px; /* Adjust the max-width as needed */
+    width: 100%; 
+    max-width: 400px;
   }
   
   .text-content h1,
   .text-content p {
-    margin: 0; /* Removes default margin */
+    margin: 0; 
   }
   
   .learn-more-btn {
@@ -40,4 +40,39 @@
   .learn-more-btn:hover {
     background-color: #005f86; /* Darker shade for hover effect */
   }
+  .accordion-button {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.4s ease;
+}
+
+.active, .accordion-button:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
   
