@@ -1,5 +1,6 @@
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bg.jpg");
+    height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,16 +31,20 @@
   .learn-more-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0073a9; /* Flickr's brand color for demonstration */
+    background-color: #0073a9; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px; /* Adds a little space above the button */
+    margin-top: 10px; 
   }
   
   .learn-more-btn:hover {
     background-color: #005f86; /* Darker shade for hover effect */
   }
+
+  .accordion-header {
+    color: #444;
+}
   .accordion-button {
     background-color: #eee;
     color: #444;
@@ -75,4 +80,78 @@ li {
     border-bottom: 1px solid #ddd;
 }
 
+
+
+.footer-container {
+  background-color: black; 
+  height: unset;
+  color: white;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.footer-message {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.footer-icons {
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-message a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  margin: auto;
+}
+
+.footer-map {
+  width: 50%;
+  margin: auto;
+}
+
+@media ( width <= 1200px) {
+  .content{
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  .footer-message {
+      width: 100%;
+  }
+
+  .footer-wrapper {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  .footer-map {
+      display: none;
+  }
+}
+
+@media ( width <= 400px) {
+  .content-image {
+      display: none;
+  }
+
+  .footer-message {
+      width: 100%;
+      flex-direction: column;
+  }
+
+}
   
